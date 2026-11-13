@@ -1,0 +1,46 @@
+_target_: model.silhand.SilHand
+
+num_joint_states: ${hand_model.num_joint_states}
+palm_joint_indices: ${hand_model.palm_joint_indices}
+canonical_palm_template: ${hand_model.canonical_palm_template}
+palm_pose_centering: centroid
+hand_side: ${hand_side}
+mano_assets_root_dir: ${mano_assets_root_dir}
+pose_param_limits: ${hand_model.pose_param_limits}
+
+image_size: 224
+image_stage_dims: [24, 48, 96, 192]
+image_stage_depths: [1, 1, 2, 2]
+image_feature_dim: 64
+image_mlp_ratio: 4.0
+
+ray_feature_dim: 16
+
+# The ROI is triangulated once before both image encoding and point lifting.
+roi_size: 0.25
+ray_consensus_min_distance: 0.02
+ray_consensus_inlier_scale: 2.5
+point_grid_size: 16
+
+view_num_heads: 4
+view_depth: 2
+view_mlp_ratio: 4.0
+
+volume_feature_dim: 64
+world_volume_depth: 3
+volume_kernel_size: 3
+volume_mlp_ratio: 2.0
+canonical_roi_size: 0.25
+
+query_width: 128
+query_depth: 3
+query_num_heads: 8
+query_mlp_ratio: 4.0
+
+pose_param_feature_dim: 128
+pose_param_decoder_width: 128
+pose_param_decoder_layers: 2
+
+vertex_shape_width: 128
+vertex_shape_displacement_scale: 0.01
+shape_projection_ridge: 0.0

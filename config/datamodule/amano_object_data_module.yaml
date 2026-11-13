@@ -1,0 +1,12 @@
+_target_: datamodule.amano_object_data_module.AMANOObjectDatamodule
+
+real_dataset_dirs:
+  - data/arctic
+  - data/dexycb
+  - data/ho3d
+  - data/interhand
+  - data/oakink
+
+image_size: [224, 224]
+num_views: 8
+mask_crop_bbox_area_fraction: ${mask_crop_bbox_area_fraction}

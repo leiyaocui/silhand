@@ -1,0 +1,8 @@
+# Install torch for your CUDA environment first.
+torch==2.12.1
+hydra-core
+numpy
+scipy
+deprecation
+chumpy==0.70
+git+https://github.com/lixiny/manotorch.git@a2a70c591f91551078b7bb2af9b5d9f275b626e0

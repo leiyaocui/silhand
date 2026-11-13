@@ -1,0 +1,37 @@
+defaults:
+  - datamodule: amano_object_data_module
+  - hand_model: amano_right
+  - model: silhand
+  - override hydra/job_logging: disabled
+  - override hydra/hydra_logging: disabled
+  - _self_
+
+ckpt_file: "pretrained_weight/silhand.pth"
+log_dir: "outputs/test/${now:%Y%m%d_%H%M%S}"
+seed: 42
+
+hand_side: right
+mano_assets_root_dir: "pretrained_weight/mano_v1_2"
+
+device: cuda:0
+precision: bf16-mixed
+compile_model: true
+num_threads: 4
+mask_crop_bbox_area_fraction: 0.25
+
+test:
+  dataloader:
+    batch_size: 32
+    num_workers: 4
+    drop_last: false
+    pin_memory: true
+    prefetch_factor: 2
+  max_batches: null
+  save_predictions: true
+
+hydra:
+  run:
+    dir: .
+  output_subdir: null
+  job:
+    chdir: false
