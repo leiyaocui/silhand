@@ -16,7 +16,7 @@
 
 <!-- prettier-ignore -->
 
-[![arXiv](https://img.shields.io/badge/arXiv-2611.16339-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2611.16339) [![Project Page](https://img.shields.io/badge/Project-Page-225747?style=flat-square)](https://silhand26.github.io/) [![Pretrained Model](https://img.shields.io/badge/Model-Weights-2563EB?style=flat-square&logo=pytorch&logoColor=white)](#pretrained-model) [![Dataset coming soon](https://img.shields.io/badge/Dataset-Coming_Soon-FFD21E?style=flat-square&logo=huggingface&logoColor=white)](#dataset)
+[![arXiv](https://img.shields.io/badge/arXiv-2611.16339-B31B1B?style=flat-square&logo=arxiv&logoColor=white)](https://arxiv.org/abs/2611.16339) [![Project Page](https://img.shields.io/badge/Project-Page-225747?style=flat-square)](https://silhand26.github.io/) [![Pretrained Model](https://img.shields.io/badge/Model-Weights-2563EB?style=flat-square&logo=pytorch&logoColor=white)](#pretrained-model) [![Dataset](https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&logo=huggingface&logoColor=white)](https://huggingface.co/datasets/Leiyao-Cui/SilHand)
 
 </div>
 
@@ -83,9 +83,9 @@ The paper's inference weights are included at [`pretrained_weight/silhand.pth`](
 
 ## Dataset
 
-**Datasets:** 🤗 Hugging Face — coming soon.
+**Datasets:** [🤗 Hugging Face](https://huggingface.co/datasets/Leiyao-Cui/SilHand).
 
-The release will include both synthetic data and preprocessed real-world datasets.
+The release includes both synthetic data and preprocessed real-world datasets.
 
 For benchmark evaluation, place the preprocessed test splits under `data/<dataset>/`.
 
